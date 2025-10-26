@@ -1,12 +1,21 @@
 import cv2
 import numpy as np
-from face_detector import create_model, preprocess_image, detect_faces, draw_faces, init_database
+from face_detector import (
+    create_model, preprocess_image, detect_faces, 
+    draw_faces, init_database, store_face
+)
 
 def main():
+    # Test SQLite connection first
+    from face_detector import test_sqlite_connection
+    if not test_sqlite_connection():
+        print("Error: SQLite connection failed!")
+        return
+
     # Load the pre-trained Haar cascade for face detection
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
     
-    # Initialize database with Nadeem's face
+    # Initialize database
     if not init_database():
         print("Error initializing database!")
         return
@@ -40,9 +49,23 @@ def main():
         # Display the frame
         cv2.imshow('Face Detection', frame)
         
-        # Break the loop if 'q' is pressed
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+        # Handle key presses
+        key = cv2.waitKey(1) & 0xFF
+        if key == ord('q'):
             break
+        elif key == ord('a'):
+            # If exactly one face is detected, allow adding to database
+            if len(faces) == 1:
+                name = input("Enter name for this face: ")
+                if name.strip():  # Make sure name is not empty
+                    x, y, w, h = faces[0]
+                    face_img = frame[y:y+h, x:x+w]  # Extract face region
+                    if store_face(name, face_img):
+                        print(f"Successfully stored face for {name}")
+                    else:
+                        print("Failed to store face")
+            else:
+                print("Please ensure exactly one face is visible to add to database")
     
     # Release resources
     cap.release()
