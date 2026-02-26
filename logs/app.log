@@ -1,0 +1,48 @@
+2026-02-24 15:45:38,110  INFO      core.database  FaceDatabase initialised at data/faces.db
+2026-02-24 15:45:38,111  INFO      core.detector  Loading YOLOv8 model from models/yolov8n-face.pt …
+2026-02-24 15:49:00,898  INFO      core.database  FaceDatabase initialised at data/faces.db
+2026-02-24 15:49:00,898  INFO      core.detector  Loading YOLOv8 model from yolov8n.pt …
+2026-02-24 15:49:06,434  INFO      core.detector  FaceDetector ready (conf=0.50, iou=0.45).
+2026-02-24 15:49:06,435  INFO      core.recognizer  FaceRecognizer initialised (threshold=0.75).
+2026-02-24 15:49:49,435  INFO      core.database  FaceDatabase initialised at data/faces.db
+2026-02-24 15:49:49,436  INFO      core.detector  Loading YOLOv8 model from yolov8n.pt …
+2026-02-24 15:49:50,082  INFO      core.detector  FaceDetector ready (conf=0.50, iou=0.45).
+2026-02-24 15:49:50,083  INFO      core.recognizer  FaceRecognizer initialised (threshold=0.75).
+2026-02-24 15:49:50,086  INFO      core.pipeline  FacePipeline initialised with 0 cached faces.
+2026-02-24 15:50:21,492  INFO      core.database  Stored face for 'Nadeem'.
+2026-02-24 15:50:21,496  INFO      core.pipeline  Face registered for 'Nadeem'.
+2026-02-24 15:50:46,515  INFO      __main__  Webcam released. Exiting.
+2026-02-24 20:00:49,754  INFO      core.database  FaceDatabase initialised at data/faces.db
+2026-02-24 20:00:49,755  INFO      core.detector  Loading YOLOv8 model from yolov8n.pt ...
+2026-02-24 20:00:51,476  INFO      core.detector  FaceDetector ready (conf=0.35, iou=0.45).
+2026-02-24 20:00:51,482  INFO      core.recognizer  FaceRecognizer initialised (threshold=0.45, resize=160x160, LBP grid=8, CLAHE clip=2.0).
+2026-02-24 20:00:51,489  INFO      core.pipeline  FacePipeline initialised with 0 cached faces.
+2026-02-24 20:01:55,727  INFO      core.database  FaceDatabase initialised at data/faces.db
+2026-02-24 20:01:55,728  INFO      core.detector  Loading YOLOv8 model from yolov8n.pt ...
+2026-02-24 20:01:57,094  INFO      core.detector  FaceDetector ready (conf=0.35, iou=0.45).
+2026-02-24 20:01:57,095  INFO      core.recognizer  FaceRecognizer initialised (threshold=0.45, resize=160x160, LBP grid=8, CLAHE clip=2.0).
+2026-02-24 20:01:57,099  INFO      core.pipeline  FacePipeline initialised with 0 cached faces.
+2026-02-24 20:02:02,036  WARNING   __main__  Failed to read frame from webcam.
+2026-02-24 20:02:02,073  INFO      __main__  Webcam released. Exiting.
+2026-02-24 20:02:05,439  INFO      __main__  Webcam released. Exiting.
+2026-02-24 20:03:03,063  INFO      app  Starting Face Detection & Recognition System …
+2026-02-24 20:03:03,066  INFO      core.database  FaceDatabase initialised at data/faces.db
+2026-02-24 20:03:03,066  INFO      core.detector  Loading YOLOv8 model from yolov8n.pt ...
+2026-02-24 20:03:03,611  INFO      core.detector  FaceDetector ready (conf=0.35, iou=0.45).
+2026-02-24 20:03:03,612  INFO      core.recognizer  FaceRecognizer initialised (threshold=0.45, resize=160x160, LBP grid=8, CLAHE clip=2.0).
+2026-02-24 20:03:03,615  INFO      core.pipeline  FacePipeline initialised with 0 cached faces.
+2026-02-24 20:03:03,622  INFO      app  Flask app created successfully.
+2026-02-24 20:37:41,473  INFO      app  Starting Face Detection & Recognition System …
+2026-02-24 20:37:41,492  INFO      core.database  FaceDatabase initialised at data/faces.db
+2026-02-24 20:37:41,493  INFO      core.detector  Loading YOLOv8 model from yolov8n.pt ...
+2026-02-24 20:37:42,159  INFO      core.detector  FaceDetector ready (conf=0.35, iou=0.45).
+2026-02-24 20:37:42,161  INFO      core.recognizer  FaceRecognizer initialised (threshold=0.45, resize=160x160, LBP grid=8, CLAHE clip=2.0).
+2026-02-24 20:37:42,171  INFO      core.pipeline  FacePipeline initialised with 0 cached faces.
+2026-02-24 20:37:42,178  INFO      app  Flask app created successfully.
+2026-02-24 20:38:04,987  INFO      app  Starting Face Detection & Recognition System …
+2026-02-24 20:38:04,990  INFO      core.database  FaceDatabase initialised at data/faces.db
+2026-02-24 20:38:04,991  INFO      core.detector  Loading YOLOv8 model from yolov8n.pt ...
+2026-02-24 20:38:05,533  INFO      core.detector  FaceDetector ready (conf=0.35, iou=0.45).
+2026-02-24 20:38:05,534  INFO      core.recognizer  FaceRecognizer initialised (threshold=0.45, resize=160x160, LBP grid=8, CLAHE clip=2.0).
+2026-02-24 20:38:05,539  INFO      core.pipeline  FacePipeline initialised with 0 cached faces.
+2026-02-24 20:38:05,546  INFO      app  Flask app created successfully.
